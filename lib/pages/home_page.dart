@@ -66,7 +66,7 @@ class _HomePageState extends State<HomePage> {
                 // logo
                 DrawerHeader(
                   child: Image.asset(
-                    'lib/images/logo.png',
+                    'lib/assets/logo.png',
                     color: Colors.white,
                     width: 150,
                   ),
