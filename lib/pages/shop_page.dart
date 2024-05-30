@@ -88,13 +88,9 @@ class _ShopPageState extends State<ShopPage> {
 
           // list of shows for sale
           Expanded(
-            flex: 2,
             child: Padding(
               padding: const EdgeInsets.all(15),
-              child: ListView.separated(
-                separatorBuilder: (context, index) => const SizedBox(
-                  width: 15,
-                ),
+              child: ListView.builder( 
                 itemCount: 5,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
@@ -112,7 +108,7 @@ class _ShopPageState extends State<ShopPage> {
           ),
 
           const Padding(
-            padding: EdgeInsets.only(top: 25.0, left: 25, right: 25),
+            padding: EdgeInsets.only(left: 25, right: 25),
             child: Divider(color: Colors.white),
           ),
         ],
